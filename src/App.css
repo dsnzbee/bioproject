@@ -643,6 +643,11 @@ input[type="range"] {
   font-variant-numeric: tabular-nums;
 }
 
+.team-grid__division {
+  font-size: 10px;
+  color: var(--text-faint);
+}
+
 .resource-list {
   list-style: none;
   margin: 0;

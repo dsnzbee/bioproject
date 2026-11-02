@@ -1,8 +1,8 @@
 const TEAM = [
-  { name: "Parth Sharma", roll: "C442", image: "team/parth.jpg", initials: "PS" },
-  { name: "Priyanshu Singh", roll: "C453", image: "team/priyanshu.png", initials: "PS" },
-  { name: "Owais Shaikh", roll: "C433", image: "team/owais.png", initials: "OS" },
-  { name: "Naitik Patni", roll: "C470", image: "team/naitik.png", initials: "NP" },
+  { name: "Parth Sharma", roll: "C442", sapId: "70022600078", division: "BTech CE, Division F", image: "team/parth.jpg", initials: "PS" },
+  { name: "Priyanshu Singh", roll: "C453", sapId: "70022600436", division: "BTech CE, Division F", image: "team/priyanshu.png", initials: "PS" },
+  { name: "Owais Shaikh", roll: "C433", sapId: "70022600374", division: "BTech CE, Division F", image: "team/owais.png", initials: "OS" },
+  { name: "Naitik Patni", roll: "C470", sapId: "70022600860", division: "BTech CE, Division F", image: "team/naitik.png", initials: "NP" },
 ];
 
 const RESEARCH_LINKS = [
@@ -112,7 +112,8 @@ export default function InfoPage({ onBack }) {
                 </div>
                 <span className="team-grid__label">
                   <span className="team-grid__name">{member.name}</span>
-                  <span className="team-grid__roll">Roll no {member.roll}</span>
+                  <span className="team-grid__roll">Roll no {member.roll} · SAP ID {member.sapId}</span>
+                  <span className="team-grid__division">{member.division}</span>
                 </span>
               </li>
             ))}
